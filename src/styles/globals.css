@@ -1,0 +1,9 @@
+body {
+  font-family: "DM Sans";
+}
+.toolbar-class {
+}
+.custom-editor-class {
+  min-height: 300px;
+  padding: 20px;
+}
