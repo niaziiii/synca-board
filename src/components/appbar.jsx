@@ -90,8 +90,7 @@ const CustomAppBar = ({ handleDrawerToggle }) => {
           <img src={"/assets/welcome.png"} alt="logo" width={210} height={28} />
         ) : (
           <Box display={"flex"} flexDirection={"column"}>
-            <Typography fontSize={29}>Sales Room</Typography>
-            <Typography>Company Name</Typography>
+            <Typography fontSize={29}>Synca</Typography>
           </Box>
         )}
         <Box sx={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>

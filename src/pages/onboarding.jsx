@@ -26,10 +26,6 @@ import { useLocation, useParams } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-// const DynamicEditor = dynamic(
-//   () => import("react-draft-wysiwyg").then((module) => module.Editor),
-//   { ssr: false }
-// );
 const stakeHolderHeader = ["Header 1", "Header 2", "Header 3", "Header 4"];
 const acceptanceHeader = [
   "Customer Challenges",
@@ -96,13 +92,6 @@ const TextSection = ({ addNewElement, content }) => {
           >
             Welcome!
           </Typography>
-          {/* <DynamicEditor
-            editorState={editorState}
-            toolbarClassName="toolbar-class"
-            wrapperClassName="custom-wrapper-class"
-            editorClassName="custom-editor-class"
-            onEditorStateChange={onEditorStateChange}
-          /> */}
           <ReactQuill
             value={value}
             onChange={handleTextChange}
@@ -394,7 +383,7 @@ const FileSection = ({ addNewElement }) => {
   );
 };
 
-const SalesHandOff = () => {
+const OnBoarding = () => {
   const { id } = useParams();
   console.log(id);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -452,7 +441,7 @@ const SalesHandOff = () => {
                   contentEditable
                   onInput={(e) => console.log(e.currentTarget.textContent)}
                 >
-                  Sales Handoff
+                  OnBoarding
                 </Typography>
                 <Typography contentEditable>Client Company name</Typography>
               </Box>
@@ -557,4 +546,4 @@ const SalesHandOff = () => {
   );
 };
 
-export default SalesHandOff;
+export default OnBoarding;

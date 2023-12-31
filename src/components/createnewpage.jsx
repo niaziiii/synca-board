@@ -22,7 +22,7 @@ import {
   saleshandofftext,
   salesroomtext,
 } from "./../textData/index";
-import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -53,7 +53,8 @@ const ListItemWithHeading = ({ heading, description, link, onSelect }) => (
 );
 
 const CreateNewPageModal = ({ open, onClose }) => {
-  const router = useLocation();
+  const router = useNavigate();
+  console.log(router);
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleSelectItem = (item) => {
@@ -73,7 +74,7 @@ const CreateNewPageModal = ({ open, onClose }) => {
         const pageId = await createPage("SalesHandOff Title", elements);
         console.log(pageId);
         // Redirect to the newly created page
-        router.push(`/saleshandoff/${pageId}`);
+        router(`/saleshandoff/${pageId}`);
       } catch (error) {
         alert(error);
       }
@@ -88,7 +89,7 @@ const CreateNewPageModal = ({ open, onClose }) => {
         const pageId = await createPage("SalesRoom Title", elements);
         console.log(pageId);
         // Redirect to the newly created page
-        router.push(`/salesroom/${pageId}`);
+        router(`/salesroom/${pageId}`);
       } catch (error) {
         alert(error);
       }
@@ -103,7 +104,7 @@ const CreateNewPageModal = ({ open, onClose }) => {
         const pageId = await createPage("ObBoarding Title", elements);
         console.log(pageId);
         // Redirect to the newly created page
-        router.push(`/onboarding/${pageId}`);
+        router(`/onboarding/${pageId}`);
       } catch (error) {
         alert(error);
       }

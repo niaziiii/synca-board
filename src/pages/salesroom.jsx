@@ -394,7 +394,7 @@ const FileSection = ({ addNewElement }) => {
   );
 };
 
-const SalesHandOff = () => {
+const SalesRoom = () => {
   const { id } = useParams();
   console.log(id);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -452,7 +452,7 @@ const SalesHandOff = () => {
                   contentEditable
                   onInput={(e) => console.log(e.currentTarget.textContent)}
                 >
-                  Sales Handoff
+                  Sales Room
                 </Typography>
                 <Typography contentEditable>Client Company name</Typography>
               </Box>
@@ -557,4 +557,4 @@ const SalesHandOff = () => {
   );
 };
 
-export default SalesHandOff;
+export default SalesRoom;

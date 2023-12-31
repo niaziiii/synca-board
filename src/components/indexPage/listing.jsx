@@ -123,6 +123,17 @@ export default function BasicTable({ rowData }) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const copyToClipboard = (textToCopy) => {
+    navigator.clipboard.writeText(textToCopy).then(
+      () => {
+        console.log("Text copied to clipboard");
+      },
+      (err) => {
+        console.error("Unable to copy text to clipboard", err);
+      }
+    );
+  };
+
   return (
     <TableContainer
       component={Paper}
@@ -208,11 +219,10 @@ export default function BasicTable({ rowData }) {
                       },
                     }}
                   >
-                    {options.map((option) => (
-                      <MenuItem key={option} onClick={handleClose}>
-                        {option}
-                      </MenuItem>
-                    ))}
+                    <MenuItem onClick={handleClose}>Delete</MenuItem>
+                    <MenuItem onClick={() => copyToClipboard(row._id)}>
+                      Copy link
+                    </MenuItem>
                   </Menu>
                 </div>
               </TableCell>
