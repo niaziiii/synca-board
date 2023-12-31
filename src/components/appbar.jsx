@@ -62,8 +62,6 @@ const CustomAppBar = ({ handleDrawerToggle }) => {
     },
   }));
 
-  const O_LOGIN_URL =
-    "https://localhost:3000/auth?widgetMode=login#o-anonymous";
   return (
     <AppBar
       position="fixed"
@@ -200,7 +198,6 @@ const CustomAppBar = ({ handleDrawerToggle }) => {
                   </MenuItem>
                 </a>
               )}
-              <a href={O_LOGIN_URL}>Lcogin</a>
             </Menu>
           </Box>
         </Box>
