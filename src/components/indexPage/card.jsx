@@ -8,11 +8,11 @@ const MyCard = ({ icon, figure, title, description, background }) => {
   return (
     <Card
       sx={{
-        width: '24%',
+        width: "24%",
         height: 190,
         background: "rgba(255, 255, 255, 0.34)",
         borderRadius: "10px",
-        boxShadow: 'none'
+        boxShadow: "none",
       }}
     >
       <CardContent>
@@ -29,7 +29,9 @@ const MyCard = ({ icon, figure, title, description, background }) => {
           {icon}
         </IconButton>
         <Typography variant="body2">{title}</Typography>
-        <Typography variant="h6" fontWeight={600}>{figure}</Typography>
+        <Typography variant="h6" fontWeight={600}>
+          {figure}
+        </Typography>
         <Typography variant="caption">{description}</Typography>
       </CardContent>
     </Card>

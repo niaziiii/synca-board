@@ -1,16 +1,5 @@
-export const saleshandofftext = `@ Welcome, this is the Sales Handoff sample page.
-This template is perfect for your sales and AM/CS team to work together and provide the
-
-best experience for your new customers!
-Include any relevant information that would be beneficial in this intro.
-Quick Tip:
-
-Add sections - Use the '+' button between blocks (¢] orl).
-Ifyou need anything at all, feel free to use the chat in the bottom right corner. We're here
-
-to help!
-
-~The Synca Team`;
+export const saleshandofftext =
+  " <p>Welcome, this is the Sales Handoff sample page.</p><p>This template is perfect for your sales and AM/CS team to work together and provide the</p><p><br></p><p>best experience for your new customers!</p><p>Include any relevant information that would be beneficial in this intro.</p><p>Quick Tip:</p><p><br></p><p>Add sections - Use the '+' button between blocks (¢] orl).</p><p>Ifyou need anything at all, feel free to use the chat in the bottom right corner. We're here</p><p><br></p><p>to help!</p><p><br></p><p>~The Synca Team`</p>";
 
 export const salesroomtext = `Hey {{client_name}}
 Thanks again for your timel | created this workspace for us to collaborate together during
