@@ -57,6 +57,7 @@ const TextSection = ({ addNewElement, content }) => {
   const [value, setValue] = useState(content?.text || "");
 
   const handleTextChange = (newValue) => {
+    console.log(newValue);
     setValue(newValue);
   };
 
