@@ -22,19 +22,25 @@ import {
 const initialRows = [
   {
     id: randomId(),
-    name: randomTraderName(),
+    name: "Account Setup",
     age: 25,
     joinDate: randomCreatedDate(),
   },
   {
     id: randomId(),
-    name: randomTraderName(),
+    name: "Kick Off Call",
     age: 36,
     joinDate: randomCreatedDate(),
   },
   {
     id: randomId(),
-    name: randomTraderName(),
+    name: "Launch your (product features)",
+    age: 19,
+    joinDate: randomCreatedDate(),
+  },
+  {
+    id: randomId(),
+    name: "Integration",
     age: 19,
     joinDate: randomCreatedDate(),
   },
@@ -107,10 +113,10 @@ export default function FullFeaturedCrudGrid() {
   };
 
   const columns = [
-    { field: "name", headerName: "Name", width: 480, editable: true },
+    { field: "name", headerName: "Next Steps", width: 480, editable: true },
     {
       field: "joinDate",
-      headerName: "Join date",
+      headerName: "Date",
       type: "date",
       width: 180,
       editable: true,

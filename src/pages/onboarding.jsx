@@ -51,6 +51,7 @@ const acceptanceData = Array.from({ length: 3 }, (_, index) => {
 const TextSection = ({ addNewElement, content }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [value, setValue] = useState(content?.text || "");
+  console.log("value", value);
 
   const handleTextChange = (newValue) => {
     setValue(newValue);
