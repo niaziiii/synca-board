@@ -1,8 +1,12 @@
-# React + Vite
+# Synca Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sales enablement dashboard: onboarding, a sales room and a sales-handoff workflow, with data grids and rich-text content.
 
-Currently, two official plugins are available:
+**Stack:** React · Vite · Material UI (Data Grid) · React Router · React Quill
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run it locally
+
+```bash
+npm install
+npm run dev
+```
